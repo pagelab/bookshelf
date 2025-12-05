@@ -1,0 +1,33 @@
+/**
+ *
+ * Link element styles.
+ *
+ */
+
+// Animated underline (except on navigation items with submenus).
+:not(:where(.has-child)) > a {
+    text-decoration: none;
+    transform: translateZ(0);
+    background-image:
+        linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+        linear-gradient( 120deg, currentColor, currentColor );
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-size: 100% 1px;
+    }
+}
+
+// Colorize visited links only within the content of posts and pages.
+.bks-content :not(.wp-block-file) a:visited {
+    color: var(--wp--preset--color--visited);
+}
+
+// Do not apply the animation if the user chooses to reduce movement on screen.
+@media not (prefers-reduced-motion) {
+    a {
+        transition: background-size 150ms ease, background-position 150ms ease, color 150ms ease;
+    }
+}

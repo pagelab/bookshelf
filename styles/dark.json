@@ -1,0 +1,238 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "base",
+                    "color": "#1d2327",
+                    "name": "Base"
+                },
+                {
+                    "slug": "border-10",
+                    "color": "#f2f2f2",
+                    "name": "Border (10%)"
+                },
+                {
+                    "slug": "border-20",
+                    "color": "#cccccc",
+                    "name": "Border (20%)"
+                },
+                {
+                    "slug": "border-30",
+                    "color": "#b7b7b7",
+                    "name": "Border (30%)"
+                },
+                {
+                    "slug": "contrast-opacity-5",
+                    "color": "#1d2327e6",
+                    "name": "Layer (10%)"
+                },
+                {
+                    "slug": "contrast-opacity-10",
+                    "color": "#1d2327cc",
+                    "name": "Layer (20%)"
+                },
+                {
+                    "slug": "contrast-opacity-20",
+                    "color": "#1d2327b3",
+                    "name": "Layer (30%)"
+                },
+                {
+                    "slug": "contrast",
+                    "color": "#f0f0f1",
+                    "name": "Contrast"
+                },
+                {
+                    "slug": "contrast-50",
+                    "color": "#5563671a",
+                    "name": "Contrast (10%)"
+                },
+                {
+                    "slug": "contrast-20",
+                    "color": "#55636726",
+                    "name": "Contrast (20%)"
+                },
+                {
+                    "slug": "contrast-30",
+                    "color": "#55636740",
+                    "name": "Contrast (30%)"
+                },
+                {
+                    "slug": "primary",
+                    "color": "#5093d4",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "primary-opacity-10",
+                    "color": "#5093d4e6",
+                    "name": "Primary (10%)"
+                },
+                {
+                    "slug": "primary-opacity-20",
+                    "color": "#5093d4cc",
+                    "name": "Primary (20%)"
+                },
+                {
+                    "slug": "primary-opacity-30",
+                    "color": "#5093d4b3",
+                    "name": "Primary (30%)"
+                },
+                {
+                    "slug": "primary-100",
+                    "color": "#e9f5f3",
+                    "name": "Primary (10%)"
+                },
+                {
+                    "slug": "primary-200",
+                    "color": "#d2ece7",
+                    "name": "Primary (20%)"
+                },
+                {
+                    "slug": "primary-300",
+                    "color": "#a5d9ce",
+                    "name": "Primary (30%)"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#153956",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "secondary-100",
+                    "color": "#153956e6",
+                    "name": "Secondary (10%)"
+                },
+                {
+                    "slug": "secondary-200",
+                    "color": "#153956cc",
+                    "name": "Secondary (20%)"
+                },
+                {
+                    "slug": "secondary-300",
+                    "color": "#153956b3",
+                    "name": "Secondary (30%)"
+                },
+                {
+                    "slug": "links",
+                    "color": "#64b5f6",
+                    "name": "Links"
+                },
+                {
+                    "slug": "selection",
+                    "color": "#455a64",
+                    "name": "Selection"
+                },
+                {
+                    "slug": "transparent",
+                    "color": "transparent",
+                    "name": "Transparent"
+                }
+            ]
+        },
+        "fontFamilies": [
+            {
+                "name": "Source Sans 3",
+                "slug": "source-sans-3",
+                "fontFamily": "\"Source Sans 3\",\"Segoe UI\",Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+                "fontFace": [
+                    {
+                        "fontFamily": "Source Sans 3",
+                        "fontWeight": "300",
+                        "fontStyle": "normal",
+                        "fontDisplay": "optional",
+                        "fontStretch": "normal",
+                        "src": [
+                            "file:./assets/fonts/source-sans-3/SourceSans3-Light.woff2"
+                        ]
+                    },
+                    {
+                        "fontFamily": "Source Sans 3",
+                        "fontWeight": "300",
+                        "fontStyle": "italic",
+                        "fontDisplay": "optional",
+                        "fontStretch": "normal",
+                        "src": [
+                            "file:./assets/fonts/source-sans-3/SourceSans3-LightItalic.woff2"
+                        ]
+                    },
+                    {
+                        "fontFamily": "Source Sans 3",
+                        "fontWeight": "600",
+                        "fontStyle": "normal",
+                        "fontDisplay": "optional",
+                        "fontStretch": "normal",
+                        "src": [
+                            "file:./assets/fonts/source-sans-3/SourceSans3-SemiBold.woff2"
+                        ]
+                    },
+                    {
+                        "fontFamily": "Source Sans 3",
+                        "fontWeight": "700",
+                        "fontStyle": "normal",
+                        "fontDisplay": "swap",
+                        "fontStretch": "normal",
+                        "src": [
+                            "file:./assets/fonts/source-sans-3/SourceSans3-Bold.woff2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Source Serif 4",
+                "slug": "source-serif-4",
+                "fontFamily": "\"Source Serif 4\",Georgia,\"Times New Roman\",\"New York\",Times,serif",
+                "fontFace": [
+                    {
+                        "fontFamily": "Source Serif 4",
+                        "fontWeight": "300",
+                        "fontStyle": "normal",
+                        "fontDisplay": "optional",
+                        "fontStretch": "normal",
+                        "srcx": [
+                            "file:./assets/fonts/source-serif-4/SourceSerif4-Light.woff2"
+                        ]
+                    },
+                    {
+                        "fontFamily": "Source Serif 4",
+                        "fontWeight": "300",
+                        "fontStyle": "italic",
+                        "fontDisplay": "optional",
+                        "fontStretch": "normal",
+                        "src": [
+                            "file:./assets/fonts/source-serif-4/SourceSerif4-LightItalic.woff2"
+                        ]
+                    },
+                    {
+                        "fontFamily": "Source Serif 4",
+                        "fontWeight": "600",
+                        "fontStyle": "normal",
+                        "fontDisplay": "optional",
+                        "fontStretch": "normal",
+                        "src": [
+                            "file:./assets/fonts/source-serif-4/SourceSerif4-SemiBold.woff2"
+                        ]
+                    },
+                    {
+                        "fontFamily": "Source Serif 4",
+                        "fontWeight": "700",
+                        "fontStyle": "normal",
+                        "fontDisplay": "swap",
+                        "fontStretch": "normal",
+                        "src": [
+                            "file:./assets/fonts/source-serif-4/SourceSerif4-Bold.woff2"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "styles": {
+        "typography": {
+            "fontSize": "var(--wp--preset--font-size--small)",
+            "fontWeight": "300",
+            "fontFamily": "var(--wp--preset--font-family--source-sans-3)",
+            "lineHeight": "var(--wp--custom--typography--line-height--large)"
+        }
+    }
+}

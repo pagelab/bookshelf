@@ -1,0 +1,35 @@
+/**
+ *
+ * Group Block.
+ * Class: is-style-bks-animated-logo.
+ * Note: unavailable in the UI.
+ */
+
+.wp-block-group.is-style-bks-animated-logo {
+
+    &:hover {
+        animation: bks-pulse 1s ease 0s 1 both;
+
+        a:hover {
+            background-size: 0;
+        }
+    }
+}
+
+@keyframes bks-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+

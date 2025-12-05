@@ -1,0 +1,64 @@
+/**
+ *
+ * Button element styles.
+ *
+ * NOTE: these are for the button ELEMENT, not specific to the button BLOCK.
+ */
+
+.wp-element-button {
+
+    transition: margin 100ms, filter 100ms, box-shadow 100ms, background-color 100ms;
+    box-shadow:
+        0 1px 3px 0 var(--wp--preset--color--contrast-50),
+        0 1px 2px 0 var(--wp--preset--color--contrast-100);
+
+    &:hover {
+        background-image: none; // Remove default underline effect on hover.
+        margin-top: -1px;
+        margin-bottom: 1px;
+    }
+
+    &:is( :active, :focus ) {
+        margin-top: 1px;
+        margin-bottom: -1px;
+        box-shadow:
+            inset 0 2px 5px 0 var(--wp--preset--color--contrast-50),
+            inset 0 1px 2px 0 var(--wp--preset--color--contrast-100);
+    }
+
+    &:visited {
+        background-color: initial;
+    }
+
+    // Center button elements vertically if an <img> is present – but not a <br>.
+    &:has( img ):not( :has( br ) ) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // If the button contains elements, center elements in the middle.
+    &:has( br ) * {
+        vertical-align: middle;
+    }
+
+    // Remove vertical spacing if the image is enclosed in an inline tag.
+    strong:has(img),
+    em:has(img) {
+        line-height: 0;
+    }
+
+    img:last-child {
+        margin-left: var(--wp--preset--spacing--10);
+    }
+
+    img:first-child {
+        margin-right: var(--wp--preset--spacing--10);
+    }
+
+    // Match the editor.
+    svg {
+        vertical-align: middle;
+        fill: currentcolor;
+    }
+}

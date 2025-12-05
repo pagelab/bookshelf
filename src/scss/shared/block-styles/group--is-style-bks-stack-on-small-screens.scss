@@ -1,0 +1,22 @@
+/**
+ *
+ * Group Block.
+ * “Stack (tab)” Block Style.
+ *
+ */
+
+.wp-block-group.is-style-bks-stack-on-small-screens {
+
+    @media ( max-width: 599px ) {
+
+        // Stack row only on small screens.
+        &.is-layout-flex.is-nowrap {
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            // > * {
+            //     text-align: center;
+            // }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/**
+ *
+ * Post Title Block.
+ * These are styles or inner elements that can't (or shouldn't) be targetted using theme.json
+ *
+ */
+
+.wp-block-post-title {
+    > a {
+        // Only change if the title has a link.
+        padding-bottom: var(--wp--custom--spacing--10);
+        background-position-x: 3px;
+    }
+}

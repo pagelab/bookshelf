@@ -1,0 +1,22 @@
+/*!
+ * Form styles
+ * Based on Pico CSS v1.5.10 (https://picocss.com)
+ * Copyright 2019-2023 - Licensed under MIT
+ */
+
+// Disable !important
+$enable-important: false;
+
+// Config
+@import "bks-form/variables";
+
+// Icons
+@import "bks-form/icons/icons";
+
+// Layout
+@import "bks-form/layout/grid"; // .grid
+
+// Content
+@import "bks-form/content/form"; // input, select, textarea, label, fieldset, legend
+@import "bks-form/content/form-checkbox-radio"; // type=checkbox, type=radio, role=switch
+@import "bks-form/content/cf7"; // Contact Form 7

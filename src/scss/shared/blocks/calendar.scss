@@ -1,0 +1,100 @@
+/**
+ *
+ * Calendar Block.
+ *
+ */
+
+.wp-block-calendar {
+
+    table {
+        text-align: center;
+    }
+
+    table caption {
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+
+    table caption,
+    table th,
+    table td,
+    nav {
+        padding: var(--wp--preset--spacing--20);
+    }
+
+    table a {
+        font-weight: 700;
+        display: block;
+        width: 80%;
+        background-color: var(--wp--preset--color--primary-opacity-10);
+        border-radius: 100px;
+        margin: 0 auto;
+        color: var(--wp--preset--color--primary-800);
+        transition: background 200ms;
+    }
+
+    table a:hover {
+        background-color: var(--wp--preset--color--primary-opacity-30);
+    }
+
+    // Overriding core styling.
+    table caption,
+    table tbody {
+        color: var(--wp--preset--color--contrast);
+    }
+
+    table th {
+        color: var(--wp--preset--color--base);
+        background-color: var(--wp--preset--color--primary-800);
+        border: none;
+        font-weight: 700;
+    }
+
+    thead th:first-child {
+        border-top-left-radius: var(--wp--preset--spacing--10);
+    }
+
+    thead th:last-child {
+        border-top-right-radius: var(--wp--preset--spacing--10);
+    }
+
+    table td {
+        border: 0;
+        border-bottom: thin solid var(--wp--preset--color--primary-300);
+    }
+
+
+    // Overriding core styles.
+    .wp-calendar-nav {
+
+        a {
+            text-transform: uppercase;
+            letter-spacing: 0.06rem;
+        }
+    }
+
+}
+
+/*=====  Theming  ======*/
+
+.wp-block-calendar {
+    tr:not(:first-child) td:nth-child(even) {
+        background-color: var(--wp--preset--color--primary-opacity-10);
+    }
+
+    tr:first-child {
+        td[colspan="1"] ~ td:nth-child(even),
+        td[colspan="3"] ~ td:nth-child(even),
+        td[colspan="5"] ~ td:nth-child(even),
+        td[colspan="2"] ~ td:nth-child(odd),
+        td[colspan="4"] ~ td:nth-child(odd),
+        td[colspan="6"] + td {
+            background-color: var(--wp--preset--color--primary-opacity-10);
+        }
+    }
+
+    td.pad {
+        background: none !important;
+    }
+}
+

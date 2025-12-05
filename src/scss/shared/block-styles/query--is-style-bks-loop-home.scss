@@ -1,0 +1,20 @@
+/**
+ *
+ * Query Block.
+ * Class: is-style-bks-loop-post.
+ * Note: unavailable in the UI.
+ *
+ */
+
+.wp-block-query.is-style-bks-loop-home {
+
+    .wp-block-post-template {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            width: 100%;
+        }
+    }
+}

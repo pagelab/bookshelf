@@ -1,0 +1,52 @@
+/**
+ *
+ * Quote Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-quote {
+
+    quotes: initial;
+    position: relative;
+
+    p {
+        margin-top: var(--wp--preset--spacing--40);
+        margin-left: var(--wp--preset--spacing--60);
+        margin-bottom: 0;
+        position: relative; // Make it consistent to the editor.
+    }
+
+    p::before {
+        content: "\201C";
+        position: absolute;
+        font-size: var(--wp--preset--font-size--xx-large);
+        line-height: var(--wp--custom--typography--line-height--small);
+        font-family: "Georgia", Times, serif;
+        font-weight: 700;
+        color: var(--wp--preset--color--primary-800);
+        left: calc(-1*var(--wp--preset--spacing--60)); // Depends on `position:relative` above.
+    }
+
+    cite {
+        display: block;
+        margin-left: var(--wp--preset--spacing--60);
+        margin-top: var(--wp--preset--spacing--30);
+    }
+
+    cite::before {
+        content: '~ ';
+    }
+
+    &.has-text-align-center::before,
+    &.has-text-align-right::before {
+        content: " ";
+    }
+
+    &.has-text-align-right {
+        border: none;
+    }
+
+}
+
+/*=====  Theming  ======*/

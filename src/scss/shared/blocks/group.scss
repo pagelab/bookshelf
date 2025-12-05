@@ -1,0 +1,14 @@
+/**
+ *
+ * Group Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-group {
+
+	// Add default padding to groups with backgrounds.
+	&.has-background {
+		padding: var(--wp--preset--spacing--40);
+	}
+}

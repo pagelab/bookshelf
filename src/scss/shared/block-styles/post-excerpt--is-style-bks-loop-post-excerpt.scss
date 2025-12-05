@@ -1,0 +1,55 @@
+/**
+ *
+ * Post Excerpt Block.
+ * Class: is-style-bks-loop-post-excerpt.
+ * Note: unavailable in the UI.
+ *
+ */
+
+.wp-block-post-excerpt.is-style-bks-loop-post-excerpt {
+
+    .wp-block-post-excerpt__excerpt:after {
+        content: "";
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: var(--wp--preset--gradient--h-base-transparent);
+    }
+
+    .wp-block-post-excerpt__more-link {
+        background-color: var(--wp--preset--color--base);
+        position: absolute;
+        z-index: 10;
+        right: 1.6rem;
+        text-align: right;
+        white-space: nowrap;
+
+        em {
+            display: inline-block;
+        }
+    }
+
+    // Do not apply the animation if the user choose to reduce movement on screen.
+    @media not (prefers-reduced-motion) {
+
+        .wp-block-post-excerpt__more-link:hover em {
+            animation: translate 500ms ease-in-out infinite;
+        }
+
+        @keyframes translate {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(5px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+}

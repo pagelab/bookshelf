@@ -1,0 +1,25 @@
+/**
+ *
+ * Group Block.
+ * “Stack (mob/tab)” Block Style.
+ *
+ */
+
+.wp-block-group.is-style-bks-stack-up-to-medium-screens {
+
+    @media ( max-width: 1024px ) {
+
+        // Stack row from mobile up to medium screens.
+        &.is-layout-flex.is-nowrap {
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            > * {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+

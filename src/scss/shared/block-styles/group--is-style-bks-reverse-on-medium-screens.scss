@@ -1,0 +1,17 @@
+/**
+ *
+ * Group Block.
+ * “Reverse (tab)” Block Style.
+ *
+ */
+
+.wp-block-group.is-style-bks-reverse-on-medium-screens {
+
+	@media ( min-width: 600px ) and ( max-width: 1024px ) {
+
+		// Reverse row only on medium screens.
+		&.is-layout-flex {
+			flex-direction: row-reverse;
+		}
+	}
+}

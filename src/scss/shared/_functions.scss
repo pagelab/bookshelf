@@ -1,0 +1,86 @@
+/**
+ *
+ * Auxiliary Sass functions.
+ *
+ */
+
+/**
+ * 01.
+ * Using color_mix() as a progressive enhancement.
+ *
+ * This adds fallbacks to the color-mix() CSS function when it is used with
+ * the custom CSS properties provided by theme.json elsewhere in the code.
+ *
+ * Avaliable functions:
+ * a) bks-color-mix(): mix primary and secondary colors with chosen percentages.
+ * b) bks-color-lighten(): adds white to a color.
+ * c) bks-color-darken(): adds black to a color.
+ * d) bks-color-add-alpha(): adds transparency to a color.
+ *
+ * Usage:
+ *
+ *  // First, import the functions file with @use '../functions';
+    Then, call the desired function on the element declaration.
+    .element {
+      --bks-target-color: var(--wp--preset--color--primary); // 1) Declare the color you wish to use (except for mixing colors).
+      animation: bks-color-add-alpha( var(--wp--preset--custom--opacity--50) ); // Call the SCSS function.
+      color: var(--bks-result-color); // Result.
+    }
+    // 2) Then check for color-mix support. This must be done manually after calling the function.
+    @supports (color: color-mix( in srgb, blue 50%, transparent ) ) {
+      .element {
+        animation: none; // Disable the paused animation.
+        color: color-mix( in srgb, var(--wp--preset--color--primary) 50%, transparent ); // Use the native CSS function.
+      }
+    }
+ */
+
+/*----------  Fallback  ----------*/
+
+// Register the custom property, so it can be created as a proper color.
+@property --bks-result-color {
+  syntax: "<color>";
+  initial-value: transparent;
+  inherits: false;
+}
+
+// Function to mix primary and secondary colors.
+@keyframes mix {
+  0%   { --bks-result-color: var(--wp--preset--color--primary-800)   }
+  100% { --bks-result-color: var(--wp--preset--color--secondary) }
+}
+
+@function bks-color-mix( $percentage ) {
+  @return mix 1s calc(-1s * #{ $percentage }) linear forwards paused;
+}
+
+// Function to lighten a color.
+@keyframes lighten {
+  0% { --bks-result-color: var(--bks-target-color) }
+  100% { --bks-result-color: white }
+}
+
+@function bks-color-lighten( $percentage ) {
+  @return lighten 1s calc(-1s * #{ $percentage }) linear forwards paused;
+}
+
+// Function to darken a color.
+@keyframes darken {
+  0% { --bks-result-color: var(--bks-target-color) }
+  100% { --bks-result-color: black }
+}
+
+@function bks-color-darken( $percentage ) {
+  @return darken 1s calc(-1s * #{ $percentage }) linear forwards paused;
+}
+
+// Function to add transparency to a color.
+@keyframes add-alpha {
+  0% { --bks-result-color: var(--bks-target-color) }
+  100% { --bks-result-color: transparent }
+}
+
+@function bks-color-add-alpha( $percentage ) {
+  @return add-alpha 1s calc(-1s * #{ $percentage }) linear forwards paused;
+}
+

@@ -1,0 +1,25 @@
+/**
+ *
+ * Query Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-query {
+
+    li > * {
+        margin-top: var(--wp--preset--spacing--30);
+    }
+
+    // Removing spacing and border from the first article in Query Loop.
+    > li:first-child *:first-child {
+        border-top: 0 !important;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .wp-block-group.is-layout-flex {
+        position: relative;
+        align-items: center;
+    }
+}

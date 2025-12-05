@@ -1,0 +1,13 @@
+/**
+ *
+ * Site logo Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-site-logo {
+
+    a:hover {
+        background-size: 0;
+    }
+}

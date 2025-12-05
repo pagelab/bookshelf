@@ -1,0 +1,65 @@
+/**
+ *
+ * Latest Posts Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-latest-posts {
+
+    li > * {
+        margin-top: var(--wp--preset--spacing--20);
+    }
+
+    // Adding a generic style for the post title, as it does not have a class on the editor.
+    li > a {
+        font-size: var(--wp--preset--font-size--medium);
+
+        &::after {
+            display: flow-root;
+            content: '';
+        }
+    }
+
+    .wp-block-latest-posts__featured-image > a {
+        display: block;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    a + .wp-block-latest-posts__post-author {
+        float: left;
+        margin-right: 1rem;
+    }
+
+    // Overwrite the float if there's no post date.
+    .wp-block-latest-posts__post-author:has(+ .wp-block-latest-posts__post-excerpt) {
+        float: none;
+        margin-right: 0;
+    }
+
+    .wp-block-latest-posts__post-author + time:before {
+        content: '•';
+        display: inline-block;
+        position: relative;
+        left: calc( var(--wp--preset--spacing--20) * -1 );
+    }
+
+    .wp-block-latest-posts__post-author,
+    time {
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        font-size: var(--wp--custom--typography--font-size--x-small);
+    }
+
+    .wp-block-latest-posts__post-excerpt {
+        margin: var(--wp--preset--spacing--20) 0 0 0;
+    }
+
+    .wp-block-post-excerpt__more-link {
+        white-space: nowrap;
+    }
+}

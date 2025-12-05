@@ -1,0 +1,39 @@
+/**
+ *
+ * This file is enqueued using `enqueue_block_assets`,
+ * because the other functions (`add_editor_style` and
+ * `wp_enqueue_block_style`) invalidate the following styles by
+ * automatically adding the class `editor-styles-wrapper`.
+ *
+ */
+
+/**
+ *
+ * Custom counter styles for removing the dots
+ * in list items (Blink and Gecko only).
+ *
+ */
+@counter-style dotless-item-decimal {
+    system: extends decimal;
+    suffix: '  ';
+}
+
+@counter-style dotless-item-upper-alpha {
+    system: extends upper-alpha;
+    suffix: '  ';
+}
+
+@counter-style dotless-item-lower-alpha {
+    system: extends lower-alpha;
+    suffix: '  ';
+}
+
+@counter-style dotless-item-upper-roman {
+    system: extends upper-roman;
+    suffix: '  ';
+}
+
+@counter-style dotless-item-lower-roman {
+    system: extends lower-roman;
+    suffix: '  ';
+}

@@ -1,0 +1,26 @@
+/**
+ *
+ * Read More Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+/**
+ *
+ * All theme links have text-decoration shown on hover/focus/active only.
+ * So it's necessary to override the core styles do make it work
+ * with the Read More block, which changes this behaviour.
+ */
+a.wp-block-read-more {
+
+    text-decoration-color: var(--wp--preset--color--transparent);
+
+    &:active,
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: var(--wp--preset--color--links);
+    }
+}
+

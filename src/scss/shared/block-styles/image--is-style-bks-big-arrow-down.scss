@@ -1,0 +1,17 @@
+/**
+ *
+ * Image Block.
+ * Class: is-style-bks-big-arrow-down.
+ * Note: unavailable in the UI.
+ */
+
+.wp-block-image.is-style-bks-big-arrow-down {
+
+    img[src*="/assets/img/icon-mask.png"] {
+        background: currentcolor;
+        mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 46 60' xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2'%3E%3Cpath d='M33.596 36.839 23 0 12.404 36.839H0L23 60l23-23.161H33.596Z' fill='currentColor' fill-rule='nonzero'/%3E%3C/svg%3E");
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: 100% 100%;
+    }
+}

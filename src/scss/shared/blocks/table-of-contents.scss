@@ -1,0 +1,113 @@
+/**
+ *
+ * Table of Contents Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+// Temporary parent selector, while #12420 is solved.
+.editor-styles-wrapper .wp-block-table-of-contents,
+.wp-site-blocks .wp-block-table-of-contents {
+
+	// Header level 2
+	ol {
+		list-style: none;
+		padding-left: 2rem;
+		counter-reset: item;
+
+		> li {
+			counter-increment: item;
+			text-indent: 0.25rem;
+		}
+
+		li::marker {
+			content: none;
+		}
+
+		> li::before {
+			content: counters(item, ".") " ";
+			display: inline-block;
+			width: auto;
+			margin-left: -1.4rem;
+			margin-right: 0.2rem;
+			text-align: right;
+			direction: rtl;
+			font-weight: 600;
+			font-size: inherit;
+			position: relative;
+			top: 0;
+			// These are needed to override other styles in the editor.
+			mask-image: none !important;
+			background-color: transparent !important;
+			padding: 0 !important;
+		}
+
+		> li:nth-child(1n+10)::before {
+			margin-left: -2rem;
+		}
+
+		// Header level 3
+		ol {
+
+			padding-left: 1.9rem;
+
+			> li::before {
+				margin-left: -2.3rem;
+			}
+
+			> li:nth-child(1n+10)::before {
+				margin-left: -3rem;
+			}
+		}
+
+		// Header level 4
+		ol ol {
+			padding-left: 3.7rem;
+
+			> li::before {
+				margin-left: -4rem;
+			}
+
+			> li:nth-child(1n+10)::before {
+				margin-left: -4.7rem;
+			}
+		}
+
+		// Header level 5
+		ol ol ol {
+			padding-left: 3.6rem;
+
+			> li::before {
+				margin-left: -4.5rem
+			}
+
+			> li:nth-child(1n+10)::before {
+				margin-left: -6.3rem;
+			}
+		}
+
+		// Header level 6
+		ol ol ol ol {
+			padding-left: 0;
+
+			> li {
+				text-indent: 0;
+			}
+
+			> li::before {
+				margin-left: 0;
+				margin-right: .6rem;
+			}
+
+			> li:nth-child(1n+10):before {
+				margin-right: .3rem;
+			}
+
+			> li:nth-child(1n+10)::before {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+/*=====  Theming  ======*/

@@ -1,0 +1,16 @@
+/**
+ *
+ * Categories Block.
+ *
+ */
+
+// The front-end and the editor have different naming conventions for some selectors. 🧐
+.wp-block-categories__list,
+.wp-block-categories-list {
+
+	ul ul {
+		list-style-type: none;
+		padding-left: var(--wp--preset--spacing--40);
+		margin-top: 0;
+	}
+}

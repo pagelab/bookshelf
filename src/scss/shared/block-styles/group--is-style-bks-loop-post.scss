@@ -1,0 +1,14 @@
+/**
+ *
+ * Group Block.
+ * Class: is-style-bks-loop-post.
+ * Note: unavailable in the UI.
+ *
+ */
+
+.wp-block-group.is-style-bks-loop-post {
+
+    &.is-layout-flex {
+        align-items: flex-start;
+    }
+}

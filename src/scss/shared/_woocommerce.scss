@@ -1,0 +1,84 @@
+/**
+ *
+ * Essential styles for WooCommerce integration.
+ * Most styling is handled by WooCommerce itself.
+ *
+ */
+
+/* Range slider color */
+.wc-block-components-price-slider__range-input-progress,
+.rtl .wc-block-components-price-slider__range-input-progress {
+    --range-color: var(--wp--preset--color--contrast);
+}
+
+/* Quantity input minimum height */
+.woocommerce .quantity .qty {
+    min-height: 38px;
+}
+
+/* Breadcrumbs color */
+.woocommerce .woocommerce-breadcrumb,
+.woocommerce .woocommerce-breadcrumb a {
+    color: var(--wp--color--text-foreground);
+}
+
+/* On-sale badge */
+.woocommerce span.onsale,
+.wc-block-components-product-sale-badge {
+    background: var(--wp--preset--color--primary-800);
+    color: var(--wp--preset--color--base);
+    min-height: 3.236rem;
+    min-width: 3.236rem;
+    padding: 0.202rem;
+    font-weight: 700;
+    font-size: var(--wp--preset--spacing--20);
+    z-index: 9;
+    position: absolute;
+    text-align: center;
+    line-height: 3.236;
+    top: 4px;
+    left: 4px;
+    right: auto;
+    margin: 0;
+    border: none;
+    border-radius: 100%;
+}
+
+/* Price color */
+.wc-block-components-product-price,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
+.woocommerce ul.products li.product .price {
+    color: var(--wp--preset--color--primary-800);
+    font-weight: 700;
+}
+
+/* Primary buttons */
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    background: var(--wp--preset--color--primary-800);
+    color: var(--wp--preset--color--base);
+}
+
+/* Product images border radius */
+.wc-block-components-product-image img,
+.woocommerce div.product div.images img,
+.woocommerce ul.products li.product a img {
+    border-radius: var(--wp--custom--border--radius--small);
+}
+
+/* Mini Cart reset */
+.wp-block-woocommerce-mini-cart button.wc-block-mini-cart__button {
+    box-shadow: none;
+    border-radius: 0;
+    background: none;
+    border: none;
+}
+
+/* Checkout return link */
+.wc-block-components-checkout-return-to-cart-button {
+    fill: var(--wp--preset--color--contrast);
+    text-decoration: underline;
+}

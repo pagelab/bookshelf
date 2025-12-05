@@ -1,0 +1,25 @@
+/**
+ *
+ * Group Block.
+ * Class: is-style-bks-loop-read-more-dot.
+ * Note: unavailable in the UI.
+ *
+ */
+
+.wp-block-read-more.is-style-bks-loop-read-more-dot {
+
+    // Dot (unvisited posts).
+    background-color: var(--wp--preset--color--links);
+    padding: 0;
+    width: var(--wp--preset--spacing--10);
+    height: var(--wp--preset--spacing--10);
+    border-radius: 1rem;
+    content: url();
+    margin-left: var(--wp--preset--spacing--30);
+    outline: 4px solid var(--wp--preset--color--primary-200);
+
+    &:visited {
+        background-color: var(--wp--preset--color--base);
+        outline-color: var(--wp--preset--color--base);
+    }
+}

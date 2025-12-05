@@ -1,0 +1,19 @@
+/**
+ *
+ * Navigation Link Block.
+ * “Hide (mob)” Block Style.
+ *
+ */
+
+.is-style-bks-hide-on-small-screens {
+
+	@media ( max-width: 599px ) {
+
+		// Hide it only on small screens.
+		position: absolute;
+	    width: 1px;
+	    clip: rect(0 0 0 0);
+	    overflow: hidden;
+	    white-space: nowrap;
+	}
+}

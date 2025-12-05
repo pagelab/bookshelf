@@ -1,0 +1,17 @@
+/**
+ *
+ * Group Block.
+ * “Reverse (mob)” Block Style.
+ *
+ */
+
+.wp-block-group.is-style-bks-reverse-on-small-screens {
+
+	@media ( max-width: 599px ) {
+
+		// Reverse row only on small screens.
+		.is-layout-flex {
+			flex-direction: row-reverse;
+		}
+	}
+}

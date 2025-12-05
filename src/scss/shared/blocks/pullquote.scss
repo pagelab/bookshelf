@@ -1,0 +1,43 @@
+/**
+ *
+ * Pullquote Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-pullquote {
+
+	p {
+		margin: 0;
+	}
+
+	p,
+	&:is(
+		.alignleft,
+		.alignright,
+		.has-text-align-left,
+		.has-text-align-right ) p {
+		font-size: var(--wp--preset--font-size--large);
+		font-weight: 700;
+		line-height: var(--wp--custom--typography--line-height--medium);
+	}
+
+	cite::before {
+	    content: "~ ";
+	}
+}
+
+body {
+
+	.wp-block-pullquote__citation,
+	.wp-block-pullquote :is( cite, footer ) {
+		display: block;
+		font-size: var(--wp--custom--typography--font-size--x-small);
+		text-transform: none;
+		font-style: italic;
+		margin-top: var(--wp--preset--spacing--20);
+	}
+}
+
+
+/*=====  Theming  ======*/

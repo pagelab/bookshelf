@@ -1,0 +1,52 @@
+/**
+ *
+ * Comments Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-comments {
+
+    // Duplicating the class to increase specificity.
+    .wp-block-comment-template.wp-block-comment-template ol {
+        // Temporary override, while #12420 is solved.
+        list-style-type: none;
+        padding-left: var(--wp--preset--spacing--70);
+    }
+
+    time,
+    .wp-block-comment-edit-link a {
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        font-size: var(--wp--custom--typography--font-size--x-small);
+    }
+
+    .wp-block-comment-content {
+        img {
+            margin-top: var(--wp--preset--spacing--20);
+        }
+    }
+
+    // Overriding core styles.
+    .wp-block-post-comments-form {
+        input:not([type="submit"]):not([type="checkbox"]),
+        textarea {
+            padding: calc( var(--wp--preset--spacing--10) - 1px ) var(--wp--preset--spacing--10) calc( var(--wp--preset--spacing--10) - 1px ) var(--wp--preset--spacing--30);
+            border: thin solid var(--wp--preset--color--border-30);
+            font-size: inherit;
+
+            &:focus {
+                border-color: var(--wp--preset--color--primary-800);
+            }
+        }
+
+        // Reaplying.
+        input[type="submit"] {
+            box-shadow:
+                0 1px 3px 0 var(--wp--preset--color--contrast-50),
+                0 1px 2px 0 var(--wp--preset--color--contrast-100);
+                transition: margin 100ms, filter 100ms, box-shadow 100ms;
+        }
+    }
+}
+

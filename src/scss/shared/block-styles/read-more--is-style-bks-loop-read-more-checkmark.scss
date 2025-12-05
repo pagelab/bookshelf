@@ -1,0 +1,31 @@
+/**
+ *
+ * Group Block.
+ * Class: is-style-bks-loop-read-more-eye.
+ * Note: unavailable in the UI.
+ *
+ */
+
+.wp-block-read-more.is-style-bks-loop-read-more-checkmark {
+
+    // Checkmark (visited posts).
+    position: relative;
+    pointer-events: none;
+    margin-left: var(--wp--preset--spacing--20);
+    top: var(--wp--preset--spacing--10);
+    width: 10px;
+    height: 16px;
+    content: url();
+    display: inline-block;
+    transform: rotate(45deg);
+    border-bottom: 3px solid var(--wp--preset--color--base);
+    border-right: 3px solid var(--wp--preset--color--base);
+
+    &:visited {
+        border-color: var(--wp--preset--color--secondary-600);
+    }
+
+    .screen-reader-text {
+        display: none;
+    }
+}

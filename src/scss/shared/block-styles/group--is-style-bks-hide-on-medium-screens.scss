@@ -1,0 +1,13 @@
+/**
+ *
+ * Group Block.
+ * “Hide (tab)” Block Style.
+ *
+ */
+
+.wp-block-group.is-style-bks-hide-on-medium-screens {
+
+	@media ( min-width: 600px ) and ( max-width: 1024px ) {
+		display: none;
+	}
+}

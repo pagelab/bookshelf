@@ -1,0 +1,10 @@
+/**
+ *
+ * Separator Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+hr.wp-block-separator {
+    border-top-width: 0;
+}

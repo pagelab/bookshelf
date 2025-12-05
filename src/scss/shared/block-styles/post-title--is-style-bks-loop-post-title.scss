@@ -1,0 +1,17 @@
+/**
+ *
+ * Post Title Block (inside the query block).
+ * Class: .is-style-bks-query-post-title (this is NOT a style variation).
+ * Note: unavailable in the UI.
+ */
+
+.is-style-bks-loop-post-title {
+
+    a {
+        transition: none;
+
+         &:hover {
+            background-size: 0;
+        }
+    }
+}

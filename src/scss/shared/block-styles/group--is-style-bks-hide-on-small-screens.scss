@@ -1,0 +1,13 @@
+/**
+ *
+ * Group Block.
+ * “Hide (mob)” Block Style.
+ *
+ */
+
+.wp-block-group.is-style-bks-hide-on-small-screens {
+
+	@media ( max-width: 599px ) {
+		display: none;
+	}
+}

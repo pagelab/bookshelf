@@ -1,0 +1,40 @@
+{
+  "name": "bookshelf",
+  "version": "0.1.0",
+  "description": "A specialized block theme for authors, publishers, bookstores, and institutions to showcase and promote publications",
+  "author": "Starter Dev",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "scripts": {
+    "build:editor": "sass src/scss/editor:assets/css/editor --style=compressed --no-source-map",
+    "build:front-end": "sass src/scss/front-end:assets/css/front-end --style=compressed --no-source-map",
+    "build:shared": "sass src/scss/shared/shared.scss:assets/css/shared/shared.css --style=compressed --no-source-map",
+    "build:blocks": "sass src/scss/shared/blocks:assets/css/shared/blocks --style=compressed --no-source-map",
+    "build:block-styles": "sass src/scss/shared/block-styles:assets/css/shared/block-styles --style=compressed --no-source-map",
+    "build:css": "npm-run-all build:editor build:front-end build:shared build:blocks build:block-styles",
+    "build:js": "wp-scripts build src/js/block-variation.js src/js/unregister.js --output-path=assets/js",
+    "watch:editor": "sass src/scss/editor:assets/css/editor --style=compressed --no-source-map --watch",
+    "watch:front-end": "sass src/scss/front-end:assets/css/front-end --style=compressed --no-source-map --watch",
+    "watch:shared": "sass src/scss/shared/shared.scss:assets/css/shared/shared.css --style=compressed --no-source-map --watch",
+    "watch:blocks": "sass src/scss/shared/blocks:assets/css/shared/blocks --style=compressed --no-source-map --watch",
+    "watch:block-styles": "sass src/scss/shared/block-styles:assets/css/shared/block-styles --style=compressed --no-source-map --watch",
+    "watch:css": "npm-run-all --parallel watch:editor watch:front-end watch:shared watch:blocks watch:block-styles",
+    "watch:js": "wp-scripts start src/js/block-variation.js src/js/unregister.js --output-path=assets/js",
+    "build": "npm run build:css && npm run build:js",
+    "watch": "npm-run-all --parallel watch:css watch:js",
+    "dev": "npm run watch",
+    "lint:css": "wp-scripts lint-style 'src/scss/**/*.scss'",
+    "lint:js": "wp-scripts lint-js 'src/js/**/*.js'",
+    "lint": "npm run lint:css && npm run lint:js",
+    "format": "wp-scripts format 'src/js/**/*.js'"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^28.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.77.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

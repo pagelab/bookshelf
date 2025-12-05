@@ -1,0 +1,60 @@
+/**
+ *
+ * Columns Block.
+ * 3 Columns.
+ *
+ */
+
+/* Reset default 3 column behaviour */
+.wp-block-columns.is-03-column-site {
+
+	@media (min-width: 782px) {
+
+        flex-wrap: wrap !important;
+
+        &:not(.is-not-stacked-on-mobile) > .wp-block-column[style*="flex-basis"] {
+            flex-grow: 1;
+        }
+	}
+
+	@media (max-width: 781px) {
+
+	    &:not(.is-not-stacked-on-mobile) > .wp-block-column {
+	        flex-basis: 100% !important;
+	    }
+	}
+
+	/* Stacked on mobile after 1100px */
+	@media (min-width: 1101px) {
+
+        flex-wrap: nowrap !important;
+
+        > .is-column-01 {
+            flex-basis: 26.2% !important;
+        }
+
+        > .is-column-02 {
+            flex-basis: 44.6% !important;
+        }
+
+        > .is-column-03 {
+            flex-basis: 18.2% !important;
+            padding-left: 8% !important;
+        }
+
+        &:not(.is-not-stacked-on-mobile)>.wp-block-column[style*="flex-basis"] {
+            flex-grow: 0;
+        }
+	}
+
+	@media (max-width: 1100px) {
+
+        &:not(.is-not-stacked-on-mobile) > .wp-block-column {
+            flex-basis: 100% !important;
+        }
+
+        &:not(.is-not-stacked-on-mobile) > .is-column-03 {
+            display: none;
+        }
+	}
+}

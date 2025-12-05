@@ -1,0 +1,31 @@
+/**
+ *
+ * Latest Comments Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-latest-comments {
+
+	// Override the default line height which is too small.
+	li {
+		line-height: var(--wp--custom--typography--line-height--small);
+	}
+
+	time {
+		letter-spacing: 0.1rem;
+    	text-transform: uppercase;
+		font-size: var(--wp--custom--typography--font-size--x-small);
+		margin-top: var(--wp--preset--spacing--20);
+	}
+
+	// Override the font size which are too small.
+	p {
+		font-size: var(--wp--preset--font-size--small);
+		margin-top: var(--wp--preset--spacing--20);
+		margin-bottom: var(--wp--preset--spacing--40);
+	}
+}
+
+/*=====  Theming  ======*/
+

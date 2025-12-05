@@ -1,0 +1,22 @@
+/**
+ *
+ * Group Block.
+ * Class: is-style-bks-header (this is NOT a style variation).
+ * Note: unavailable in the UI.
+ */
+
+// Force navigation in one line on mobile.
+.wp-block-group.is-style-bks-header {
+
+    @media ( max-width: 599px ) {
+         > .is-layout-flex > div {
+            width: auto;
+        }
+    }
+
+    @media ( max-width: 300px ) {
+         > .is-layout-flex {
+            flex-direction: column;
+        }
+    }
+}

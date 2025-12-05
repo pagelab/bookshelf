@@ -1,0 +1,117 @@
+/**
+ *
+ * Bug fixes and adjustment styles for the editor only.
+ * TO-DO: remove bugfixes them when solved by core.
+ *
+ */
+
+
+/**
+ *
+ * The editor explicitly adds text-decoration to links,
+ * which makes them underline by default,
+ * so it is necessary to add again the margin top in this block.
+ *
+ */
+a {
+    text-decoration: auto !important;
+}
+
+
+/**
+ *
+ * Table Block.
+ * Colors need to be added to the <table> element.
+ *
+ */
+.wp-block-table table {
+    color: var(--wp--preset--color--contrast);
+}
+
+
+/**
+ *
+ * Calendar Block.
+ * Some styles need to be overriden in the editor.
+ *
+ */
+.wp-block-calendar {
+    table caption,
+    table th,
+    table td,
+    nav {
+        padding: var(--wp--preset--spacing--20);
+        font-size: var(--wp--preset--font-size--small);
+        line-height: var(--wp--custom--typography--line-height--large);
+    }
+}
+
+
+/**
+ *
+ * File Block.
+ * Colors need to be overriden in the editor.
+ *
+ */
+.wp-block-file {
+    .wp-block-file__button {
+        background: var(--wp--preset--color--primary-800);
+        color: var(--wp--preset--color--base);
+    }
+}
+
+
+/**
+ *
+ * Tag Cloud Block (is-style-outline).
+ * Because the markup is different from the front-end,
+ * the native CSS for “is-style-outline” needs to be
+ * re-added in the editor.
+ *
+ */
+.wp-block-tag-cloud {
+    &.is-style-outline p {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1ch;
+    }
+}
+
+/**
+ *
+ * The markup of the Query block is different in the editor,
+ * so the margin-top needs to be added again.
+ *
+ */
+.wp-block-query {
+    li > * + * {
+        margin-top: var(--wp--preset--spacing--30);
+    }
+}
+
+/**
+ *
+ * Remove min-heigth from Contact Form 7 block placeholder.
+ */
+.wp-block-group.bks-form {
+    [class*="contact-form-7"] {
+        min-height: auto;
+        align-items: center;
+        margin: 0 auto !important;
+
+        .components-combobox-control__suggestions-container {
+            border-radius: var(--wp--custom--border--radius--default);
+        }
+
+        // Reset the CF7 Form selector input on the editor.
+        .components-combobox-control__input {
+            border: none;
+            font-size: inherit;
+            border-radius: 0;
+            background-color: transparent;
+            height: auto;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

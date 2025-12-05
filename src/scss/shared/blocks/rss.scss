@@ -1,0 +1,52 @@
+/**
+ *
+ * RSS Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-rss {
+
+	.wp-block-rss__item:not(:first-child) {
+		margin-top: var(--wp--preset--spacing--40);
+	}
+
+	// Adding a generic style for the post title, as it does not have a class on the editor.
+	.wp-block-rss__item-title {
+		display: flow-root;
+		margin-bottom: var(--wp--preset--spacing--20);
+	}
+
+	a {
+		font-size: var(--wp--preset--font-size--medium);
+	}
+
+	.wp-block-rss__item-title + time {
+		float: left;
+		margin-right: 1.2rem;
+	}
+
+	// Overwrite the float if there's no author.
+	.wp-block-rss__item-publish-date:has(+ div) {
+		float: none;
+		margin-right: 0;
+	}
+
+	time + span:before {
+		content: '•';
+	    display: inline-block;
+	    position: relative;
+	    left: calc( var(--wp--preset--spacing--20) * -1 );
+	}
+
+	span,
+	time {
+		letter-spacing: 0.1rem;
+    	text-transform: uppercase;
+		font-size: var(--wp--custom--typography--font-size--x-small);
+	}
+
+	.wp-block-rss__item-excerpt {
+		margin: var(--wp--preset--spacing--20) 0 0 0;
+	}
+}

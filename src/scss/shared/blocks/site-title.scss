@@ -1,0 +1,19 @@
+/**
+ *
+ * Site title Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-site-title {
+    white-space: nowrap;
+
+    a {
+        display: inline-block;
+    }
+
+    @media ( max-width: 420px ) {
+         text-align: center;
+         white-space: normal;
+    }
+}

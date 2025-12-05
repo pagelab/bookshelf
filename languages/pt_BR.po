@@ -1,0 +1,545 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: epico\n"
+"POT-Creation-Date: 2023-10-23 17:50-0300\n"
+"PO-Revision-Date: 2023-10-23 17:51-0300\n"
+"Last-Translator: Márcio Duarte <contato@uberfacil.com>\n"
+"Language-Team: Márcio Duarte <contato@uberfacil.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: inc/block-styles.php:43
+msgid "Flat"
+msgstr "Liso"
+
+#: inc/block-styles.php:44
+msgid "Arrow (→)"
+msgstr "Seta (→)"
+
+#: inc/block-styles.php:45
+msgid "Arrow (↓)"
+msgstr "Seta (↓)"
+
+#: inc/block-styles.php:48
+msgid "Shadow"
+msgstr "Sombra"
+
+#: inc/block-styles.php:51 inc/block-styles.php:77
+msgid "Hide (mob)"
+msgstr "Ocultar (cel)"
+
+#: inc/block-styles.php:52 inc/block-styles.php:78
+msgid "Hide (tab)"
+msgstr "Ocultar (tab)"
+
+#: inc/block-styles.php:53
+msgid "Hide (mob/tab)"
+msgstr "Ocultar (cel/tab)"
+
+#: inc/block-styles.php:54
+msgid "Reverse (mob)"
+msgstr "Reverter (cel)"
+
+#: inc/block-styles.php:55
+msgid "Reverse (tab)"
+msgstr "Reverter (tab)"
+
+#: inc/block-styles.php:56
+msgid "Stack (mob)"
+msgstr "Empilhar (cel)"
+
+#: inc/block-styles.php:57
+msgid "Stack (tab)"
+msgstr "Empilhar (tab)"
+
+#: inc/block-styles.php:58
+msgid "Stack (mob/tab)"
+msgstr "Empilhar (cel/tb)"
+
+#: inc/block-styles.php:59
+msgid "Line (mob)"
+msgstr "Linha (cel)"
+
+#: inc/block-styles.php:60
+msgid "Line (tab)"
+msgstr "Linha (tab)"
+
+#: inc/block-styles.php:61
+msgid "Line (mob/tab)"
+msgstr "Linha (cel/tab)"
+
+#: inc/block-styles.php:64
+msgid "Width (1/3)"
+msgstr "Largura (1/3)"
+
+#: inc/block-styles.php:65
+msgid "Width (2/3)"
+msgstr "Largura (2/3)"
+
+#: inc/block-styles.php:68
+msgid "Icon"
+msgstr "Ícone"
+
+#: inc/block-styles.php:71
+msgid "Underlined"
+msgstr "Sublinhado"
+
+#: inc/block-styles.php:74
+msgid "Theme nav"
+msgstr "Navegação do tema"
+
+#: inc/block-styles.php:81
+msgid "Sticky header"
+msgstr "Cabeçalho fixo"
+
+#: inc/extra-functions.php:72
+msgid "Thumbnail (crop from center)"
+msgstr "Miniatura (recortar do centro)"
+
+#: inc/extra-functions.php:73
+msgid "Medium (crop from center)"
+msgstr "Médio (recortar do centro)"
+
+#: inc/extra-functions.php:110
+msgctxt "Used if post or pages has no title"
+msgid "(No title)"
+msgstr "(Sem título)"
+
+#: inc/extra-functions.php:133
+#, php-format
+msgid "Continue reading %s"
+msgstr "Continue lendo %s"
+
+#: inc/patterns.php:38 inc/patterns/404.php:10 inc/patterns/404.php:14
+msgid "404"
+msgstr "404"
+
+#: inc/patterns.php:41
+msgid "Branding"
+msgstr "Branding"
+
+#: inc/patterns.php:44 inc/patterns/capture-classic.php:10
+msgid "Lead capture"
+msgstr "Captura de lead"
+
+#: inc/patterns.php:47
+msgid "Counter"
+msgstr "Contador"
+
+#: inc/patterns.php:50 inc/patterns.php:59
+msgid "Hero"
+msgstr "Capa"
+
+#: inc/patterns.php:53
+msgid "Footer"
+msgstr "Rodapé"
+
+#: inc/patterns.php:56
+msgid "Header"
+msgstr "Cabeçalho"
+
+#: inc/patterns.php:62
+msgid "Landing"
+msgstr "Landing"
+
+#: inc/patterns.php:65
+msgid "Notification"
+msgstr "Notificação"
+
+#: inc/patterns.php:68
+msgid "Pages"
+msgstr "Páginas"
+
+#: inc/patterns.php:71
+msgid "Pricing"
+msgstr "Preços"
+
+#: inc/patterns.php:74
+msgid "Products"
+msgstr "Produtos"
+
+#: inc/patterns.php:77
+msgid "Search"
+msgstr "Busca"
+
+#: inc/patterns.php:80
+msgid "Sections"
+msgstr "Seções"
+
+#: inc/patterns.php:83
+msgid "Specifications"
+msgstr "Especificações"
+
+#: inc/patterns.php:86
+msgid "Steps"
+msgstr "Etapas"
+
+#: inc/patterns/404.php:11
+msgctxt "Block pattern description"
+msgid "404 page"
+msgstr "Página 404"
+
+#: inc/patterns/404.php:14
+msgid "not found"
+msgstr "não encontrado"
+
+#: inc/patterns/404.php:23
+msgid "Page not found"
+msgstr "Página não encontrada"
+
+#: inc/patterns/404.php:27
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Parece que nada foi encontrado neste local. Talvez tente uma pesquisa?"
+
+#: inc/patterns/404.php:38
+msgid "Latest posts"
+msgstr "Últimas postagens"
+
+#: inc/patterns/animated-logo.php:10
+msgid "Animated logo"
+msgstr "Logotipo animado"
+
+#: inc/patterns/animated-logo.php:11
+msgctxt "Block pattern description"
+msgid "Logo image with hover animation, followed by the site title."
+msgstr ""
+"Imagem do logotipo com animação ao passar o mouse, seguida pelo título do "
+"site."
+
+#: inc/patterns/animated-logo.php:13
+msgid "logo"
+msgstr "logo"
+
+#: inc/patterns/animated-logo.php:13
+msgid "branding"
+msgstr "branding"
+
+#: inc/patterns/capture-classic.php:11
+msgctxt "Block pattern description"
+msgid ""
+"A full-width responsive section containing a promotional text with an image "
+"and an opt-in form."
+msgstr ""
+"Uma seção responsivo de largura total contendo um texto promocional com uma "
+"imagem e um formulário de captura."
+
+#: inc/patterns/capture-classic.php:13
+msgid "optin"
+msgstr "Optin"
+
+#: inc/patterns/capture-classic.php:13 inc/patterns/footer-alt.php:14
+#: inc/patterns/footer-default.php:14 inc/patterns/header-alt.php:14
+#: inc/patterns/header-default.php:14 inc/patterns/search.php:13
+msgid "horizontal"
+msgstr "horizontal"
+
+#: inc/patterns/capture-classic.php:13 inc/patterns/footer-alt.php:14
+#: inc/patterns/footer-default.php:14 inc/patterns/header-alt.php:14
+#: inc/patterns/header-default.php:14 inc/patterns/search.php:13
+msgid "full-width"
+msgstr "largura total"
+
+#: inc/patterns/capture-classic.php:13
+msgid "capture"
+msgstr "captura"
+
+#: inc/patterns/capture-classic.php:20
+msgid ""
+"Capture, convert, delight: the right theme to skyrocket your marketing "
+"potential"
+msgstr ""
+"Capture, converta, encante: o tema certo para disparar seu potencial de "
+"marketing"
+
+#: inc/patterns/capture-classic.php:29
+msgid ""
+"Discover unparalleled customization possibilities and rely on top-notch "
+"services and support to effortlessly build your inbound marketing machine."
+msgstr ""
+"Descubra possibilidades incomparáveis de personalização e conte com serviços "
+"e suporte fora da curva para construir sem esforço sua máquina de marketing "
+"de atração."
+
+#: inc/patterns/footer-alt.php:10
+msgid "Alternative footer"
+msgstr "Rodapé alternativo"
+
+#: inc/patterns/footer-alt.php:11 inc/patterns/footer-default.php:11
+msgctxt "Block pattern description"
+msgid ""
+"A full-width horizontal footer containing a copyright statement and a "
+"secondary navigation."
+msgstr ""
+"Um rodapé horizontal de largura total contendo uma declaração de direitos "
+"autorais e uma navegação secundária."
+
+#: inc/patterns/footer-alt.php:14 inc/patterns/footer-default.php:14
+#: inc/patterns/footer-links.php:12
+msgid "footer"
+msgstr "rodapé"
+
+#: inc/patterns/footer-alt.php:22 inc/patterns/footer-default.php:22
+msgid "All rights reserved"
+msgstr "Todos os direitos reservados"
+
+#: inc/patterns/footer-default.php:10
+msgid "Default footer"
+msgstr "Rodapé padrão"
+
+#: inc/patterns/footer-links.php:10
+msgid "Footer links"
+msgstr "Links do rodapé"
+
+#: inc/patterns/footer-links.php:12
+msgid "vertical"
+msgstr "vertical"
+
+#: inc/patterns/footer-links.php:20
+msgid "Copyright"
+msgstr "Copyright"
+
+#: inc/patterns/footer-links.php:20
+msgctxt "copyright date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/patterns/header-alt.php:10
+msgid "Alternative header"
+msgstr "Cabeçalho alternativo"
+
+#: inc/patterns/header-alt.php:11
+msgctxt "Block pattern description"
+msgid ""
+"A full-width vertical header containing the site title and the navigation."
+msgstr ""
+"Um cabeçalho vertical de largura total que contém o título do site e a "
+"navegação."
+
+#: inc/patterns/header-alt.php:14 inc/patterns/header-default.php:14
+msgid "header"
+msgstr "cabeçalho"
+
+#: inc/patterns/header-alt.php:31 inc/patterns/header-default.php:31
+msgid "Search icon"
+msgstr "Ícone de pesquisa"
+
+#: inc/patterns/header-default.php:10
+msgid "Default header"
+msgstr "Cabeçalho padrão"
+
+#: inc/patterns/header-default.php:11
+msgctxt "Block pattern description"
+msgid ""
+"A full-width horizontal header containing the site title and the navigation."
+msgstr ""
+"Um cabeçalho horizontal de largura total que contém o título do site e a "
+"navegação."
+
+#: inc/patterns/notice-bar.php:10
+msgid "Notification bar"
+msgstr "Barra de notificação"
+
+#: inc/patterns/notice-bar.php:11
+msgctxt "Block pattern description"
+msgid "A full-width notification sticky bar containing a paragraph and a CTA."
+msgstr ""
+"Uma barra fixada de notificação de largura total contendo um parágrafo e uma "
+"chamada à ação (CTA)."
+
+#: inc/patterns/notice-bar.php:13
+msgid "notification"
+msgstr "notificação"
+
+#: inc/patterns/notice-bar.php:13
+msgid "cta"
+msgstr "Ata"
+
+#: inc/patterns/notice-bar.php:13
+msgid "sticky"
+msgstr "Fixo"
+
+#: inc/patterns/notice-bar.php:23
+msgid "Explore a new frontier of customization and performance"
+msgstr "Explore uma nova fronteira de personalização e desempenho"
+
+#: inc/patterns/notice-bar.php:30
+msgid "Start"
+msgstr "Começar"
+
+#: inc/patterns/search.php:10
+msgid "Search page"
+msgstr "Página de pesquisa"
+
+#: inc/patterns/search.php:13
+msgid "search"
+msgstr "pesquisar"
+
+#. Theme Name of the plugin/theme
+msgid "Épico"
+msgstr "Épico"
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.uberfacil.com/epico/"
+msgstr "https://www.uberfacil.com/epico/"
+
+#. Description of the plugin/theme
+msgid ""
+"Épico is a premium theme carefully designed to facilitate the application of "
+"inbound marketing strategies. With highly flexible customization options, "
+"its unique conversion-centric design is based on battlefield-tested "
+"techniques, and will help you further captivate your audience."
+msgstr ""
+"O Épico é um tema premium cuidadosamente projetado para facilitar a "
+"aplicação de estratégias de marketing de atração. Com opções de "
+"personalização altamente flexíveis, seu exclusivo design centrado em "
+"conversões, baseado em técnicas testadas no campo de batalha, ajudará você a "
+"cativar ainda mais o seu público."
+
+#. Author of the plugin/theme
+msgid "Márcio Duarte"
+msgstr "Márcio Duarte"
+
+#~ msgid ""
+#~ "I agree with the use of my data only to send personalized campaigns in "
+#~ "accordance with the privacy policy of this website."
+#~ msgstr ""
+#~ "Concordo com a utilização dos meus dados apenas para envio de campanhas "
+#~ "personalizadas em acordo com a política de privacidade deste website."
+
+#~ msgid "Subscribe now"
+#~ msgstr "Assine já"
+
+#~ msgid "Horizontal opt-in"
+#~ msgstr "Captura horizontal"
+
+#, fuzzy
+#~| msgid "Landing"
+#~ msgid "Lead branding"
+#~ msgstr "Landing"
+
+#~ msgid "E-commerce"
+#~ msgstr "E-commerce"
+
+#~ msgid "Opt-in"
+#~ msgstr "Captura de leads"
+
+#~ msgid "Épico 404"
+#~ msgstr "Épico 404"
+
+#, fuzzy
+#~| msgid "Épico"
+#~ msgid "Épico Hero"
+#~ msgstr "Épico"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Épico Search"
+#~ msgstr "Busca"
+
+#, fuzzy
+#~| msgid "Épico"
+#~ msgid "Épico Steps"
+#~ msgstr "Épico"
+
+#~ msgid "Contact"
+#~ msgstr "Contato"
+
+#~ msgid "General"
+#~ msgstr "Geral"
+
+#~ msgid "Showcase"
+#~ msgstr "Vitrine"
+
+#~ msgid "Team"
+#~ msgstr "Equipe"
+
+#~ msgid "Testimonial"
+#~ msgstr "Depoimento"
+
+#~ msgid "Fulfilment"
+#~ msgstr "Agradecimento"
+
+#~ msgid "Query"
+#~ msgstr "Consulta"
+
+#, php-format
+#~ msgid "Search results for \"%s\""
+#~ msgstr "Resultados da pesquisa para \"%s\""
+
+#~ msgid "Search results"
+#~ msgstr "Resultados da pesquisa"
+
+#~ msgctxt "sample content"
+#~ msgid "Sample content. Replace the text with your own content."
+#~ msgstr "Conteúdo de amostra. Substitua o texto pelo seu próprio conteúdo."
+
+#~ msgid ""
+#~ "A universe of opportunities awaits you – where will your journey take you?"
+#~ msgstr ""
+#~ "Um universo de oportunidades espera por você – onde sua jornada te levará?"
+
+#~ msgid "Discover"
+#~ msgstr "Descubra"
+
+#~ msgid ""
+#~ "Take one quantum leap towards your goals today – are you ready to launch?"
+#~ msgstr ""
+#~ "Um universo de oportunidades espera por você – onde sua jornada te levará?"
+
+#~ msgid ""
+#~ "Every day offers new opportunities: do you already know which ones to "
+#~ "explore today?"
+#~ msgstr ""
+#~ "Cada dia oferece novas oportunidades: você já sabe quais explorar hoje?"
+
+#~ msgid "Click here"
+#~ msgstr "Clique aqui"
+
+#, fuzzy
+#~| msgid "We have an important message for you."
+#~ msgid "We have an important message for you"
+#~ msgstr "Temos uma mensagem importante para você."
+
+#~ msgid "Arrow right icon"
+#~ msgstr "Ícone de seta para a direita"
+
+#~ msgid "Arrow (d)"
+#~ msgstr "Seta (b)"
+
+#~ msgid "Reverse (sm)"
+#~ msgstr "Reverso (pq)"
+
+#~ msgid "Stack (sm)"
+#~ msgstr "Pilha (pq)"
+
+#~ msgid "Stack (sm/md)"
+#~ msgstr "Pilha (pq)"
+
+#~ msgid "Images"
+#~ msgstr "Imagens"
+
+#~ msgid "Flat button"
+#~ msgstr "Botão plano"
+
+#~ msgid "Button with shadow"
+#~ msgstr "Botão com sombra"
+
+#~ msgid "Button style"
+#~ msgstr "Estilo do botão"
+
+#~ msgid "Text shadow"
+#~ msgstr "Sombra do texto"

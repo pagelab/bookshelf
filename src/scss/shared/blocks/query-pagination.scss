@@ -1,0 +1,19 @@
+/**
+ *
+ * Query Pagination Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-query-pagination {
+
+    .wp-block-query-pagination-next-arrow {
+        margin-left: var(--wp--preset--spacing--10);
+    }
+
+    .wp-block-query-pagination-previous-arrow {
+        margin-right: var(--wp--preset--spacing--10);
+    }
+}
+
+/*=====  Theming  ======*/

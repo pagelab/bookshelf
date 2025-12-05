@@ -1,0 +1,79 @@
+/**
+ *
+ * Base editor styles.
+ *
+ */
+
+// Normalizing spacing for block level elements.
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Removing default margins.
+:where(
+    p,
+    button,
+    figure,
+    blockquote,
+    dl,
+    dd
+) {
+    margin: 0;
+}
+
+// Help prevent overflow of long words/names/URLs.
+:where(
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    dd
+) {
+    max-width: 65ch;
+    overflow-wrap: break-word;
+}
+
+// Balance text in short texts.
+:where(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    caption,
+    figcaption,
+    label
+) {
+    text-wrap: balance;
+}
+
+// Cursor selection color.
+::selection {
+    color: var(--wp--preset--color--selection-text);
+    background-color: var(--wp--preset--color--selection-background);
+}
+
+
+// Simulate bold, italic or small-caps as needed.
+p {
+    font-synthesis: style weight small-caps;
+}
+
+// Reduce the thickness of the strike-through tag.
+s {
+    text-decoration-thickness: 1px;
+}
+
+// Always center images.
+img {
+    vertical-align: middle;
+}
+
+// Override default browser value.
+strong {
+    font-weight: 600;
+}

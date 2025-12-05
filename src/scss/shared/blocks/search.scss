@@ -1,0 +1,31 @@
+/**
+ *
+ * Search Block.
+ * These are styles or inner elements that can't be targetted using theme.json
+ *
+ */
+
+.wp-block-search {
+
+    .wp-block-search__inside-wrapper {
+        border: none;
+        margin-top: 0;
+    }
+
+    input {
+        padding: calc(var(--wp--preset--spacing--10) - 1px) var(--wp--preset--spacing--10) calc(var(--wp--preset--spacing--10) - 1px) var(--wp--preset--spacing--30);
+        // Re-adding the border width with a better value for mobile phones (thin).
+        border: thin solid var(--wp--preset--color--border-30);
+        font-size: inherit;
+        margin-top: 0;
+        border-radius: var(--wp--custom--border--radius--small);
+    }
+
+    .wp-block-search__inside-wrapper .wp-element-button,
+    .wp-block-button__link  {
+        padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--30);
+        border-radius: var(--wp--custom--border--radius--small);
+        margin-left: 0.4rem;
+        line-height: var(--wp--custom--typography--line-height--small);
+    }
+}

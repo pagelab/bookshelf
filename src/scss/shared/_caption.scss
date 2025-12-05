@@ -1,0 +1,23 @@
+/**
+ *
+ * Caption element styles.
+ *
+ * NOTE: These affects captions in all blocks.
+ */
+
+:where(
+	.wp-element-caption,
+	.wp-block-audio,
+	.wp-block-embed,
+	.wp-block-gallery,
+	.wp-block-image,
+	.wp-block-table,
+	.wp-block-video
+) figcaption {
+    font-style: italic;
+    text-align: center;
+    color: var(--wp--preset--color--contrast);
+    font-size: var(--wp--custom--typography--font-size--x-small) !important; // This is needed to overwrite the core style.
+    margin: var(--wp--preset--spacing--10) 0 0 !important;
+    padding: var(--wp--preset--spacing--10);
+}

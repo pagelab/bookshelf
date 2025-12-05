@@ -1,0 +1,31 @@
+/**
+ *
+ * Post Author Block.
+ * Class: is-style-bks-loop-post-author.
+ * Note: unavailable in the UI.
+ *
+ */
+
+.wp-block-post-author.is-style-bks-loop-post-author {
+
+
+    // Apply the styles to the main div if there's no link.
+    &:not(:has(a)) {
+        padding: var(--wp--preset--spacing--10) var(--wp--preset--spacing--20);
+        border: thin solid var(--wp--preset--color--contrast-opacity-20);
+        border-radius: var(--wp--custom--border--radius--big);
+    }
+
+    // Apply the styles to the link if present.
+    a {
+        padding: var(--wp--preset--spacing--10) var(--wp--preset--spacing--20);
+        border: thin solid var(--wp--preset--color--contrast-opacity-20);
+        border-radius: var(--wp--custom--border--radius--big);
+        display: inline-block;
+
+        &:hover {
+            background-size: 0;
+            border-color: var(--wp--preset--color--links)
+        }
+    }
+}

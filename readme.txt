@@ -35,5 +35,5 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 
-Bookshelf is based on Épico (https://www.uberfacil.com/epico/), (C) Márcio Duarte, [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
+Bookshelf is based on Épico Blocks (https://epico.studio/epico-blocks/), (C) Márcio Duarte, [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 

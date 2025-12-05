@@ -1,7 +1,6 @@
 <?php
 /**
  * Theme main function file.
- *
  * "Verba volant, scripta manent"
  *
  * @package    bookshelf
